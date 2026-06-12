@@ -2,8 +2,7 @@ export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
   name: "sea elephant?",
-  description:
-    "what are they?",
+  description: "what are they?",
   navItems: [
     {
       label: "①",

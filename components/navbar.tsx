@@ -14,7 +14,6 @@ import { Link } from "@heroui/link";
 import NextLink from "next/link";
 
 import { siteConfig } from "@/config/site";
-import { ThemeSwitch } from "@/components/theme-switch";
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -53,7 +52,6 @@ export const Navbar = () => {
       {/* RIGHT SIDE */}
       <NavbarContent justify="end">
         {/* Desktop Links */}
-
 
         {/* Mobile Toggle */}
         <div className="sm:hidden">

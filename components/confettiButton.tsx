@@ -1,15 +1,12 @@
 "use client";
 
 import { Button } from "@heroui/button";
-import { addToast } from "@heroui/toast";
 import confetti from "canvas-confetti";
 
 export default function ConfettiButton() {
   const fireConfetti = () => {
     const duration = 6 * 1000;
     const end = Date.now() + duration;
-
-
 
     const colors = ["#ffffff", "#459bcc", "#a5e0f2", "#e0ca77"];
 

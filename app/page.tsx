@@ -1,11 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { Snippet } from "@heroui/snippet";
-import { Code } from "@heroui/code";
-import { Button } from "@heroui/button";
 
-import { title, subtitle } from "@/components/primitives";
+import { title } from "@/components/primitives";
 import ConfettiButton from "@/components/confettiButton";
 
 export default function Home() {
@@ -26,7 +23,6 @@ export default function Home() {
       <div className="my-10 flex gap-3">
         <ConfettiButton />
       </div>
-
     </section>
   );
 }
