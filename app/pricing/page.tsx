@@ -6,6 +6,7 @@ import { addToast } from "@heroui/toast";
 import { Accordion, AccordionItem } from "@heroui/react";
 
 import { title } from "@/components/primitives";
+import ConfettiButton from "@/components/confettiButton";
 
 export default function PricingPage() {
   const thisDoesNothingToast = () => {
@@ -18,115 +19,61 @@ export default function PricingPage() {
   };
 
   return (
-    <div>
-      <h1 className={title()}>Pricing</h1>
+    <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
+    <div className="inline-block max-w-xl text-center justify-center">
+      <h1 className={title({color:"blue"})}>which?&nbsp;
+        <br /></h1>
 
-      <p>Pricing? Boring!</p>
-
-      <section className="mt-20">
-        <h2 className="text-center text-4xl font-bold">Example Plans</h2>
-        <div className="flex justify-center gap-8 mt-20">
-          {/* plan 1 */}
-          <Card className="p-6 w-1/3">
-            <CardHeader>
-              <div className="text-3xl text-center w-full font-extrabold text-primary">
-                $29.99 <span className="text-sm">/mo</span>
-              </div>
-            </CardHeader>
-            <CardBody>
-              <ul className="list-disc pl-5 text-xl">
-                <li>1,000 monthly orders</li>
-                <li>5,000 customer limit</li>
-                <li>Manual bookkeeping and invoices</li>
-                <li>Standard shipping</li>
-              </ul>
-            </CardBody>
-            <CardFooter className="justify-center">
-              <Button
-                color="primary"
-                radius="full"
-                onPress={() => {
-                  thisDoesNothingToast();
-                }}
-              >
-                Sign Up
-              </Button>
-            </CardFooter>
-          </Card>
-
-          {/* plan 2 */}
-          <Card className="p-6 w-1/3">
-            <CardHeader>
-              <div className="text-3xl text-center w-full font-extrabold text-secondary">
-                $59.99 <span className="text-sm">/mo</span>
-              </div>
-            </CardHeader>
-            <CardBody>
-              <ul className="list-disc pl-5 text-xl">
-                <li>Unlimited monthly orders</li>
-                <li>100,000 customer limit</li>
-                <li>AI powered bookkeeping and invoices</li>
-                <li>Standard + Express shipping</li>
-              </ul>
-            </CardBody>
-            <CardFooter className="justify-center">
-              <Button
-                color="secondary"
-                radius="full"
-                onPress={() => {
-                  thisDoesNothingToast();
-                }}
-              >
-                Sign Up
-              </Button>
-            </CardFooter>
-          </Card>
-
-          {/* plan 3 */}
-          <Card className="p-6 w-1/3">
-            <CardHeader>
-              <div className="text-3xl text-center w-full font-extrabold text-success">
-                Custom
-              </div>
-            </CardHeader>
-            <CardBody>
-              <ul className="list-disc pl-5 text-xl">
-                <li>Unlimited monthly orders</li>
-                <li>Unlimited customers</li>
-                <li>Custom shipping</li>
-                <li>AI tools</li>
-              </ul>
-            </CardBody>
-            <CardFooter className="justify-center">
-              <Button
-                color="success"
-                radius="full"
-                onPress={() => {
-                  thisDoesNothingToast();
-                }}
-              >
-                Contact Us
-              </Button>
-            </CardFooter>
-          </Card>
-        </div>
-      </section>
-
-      <section className="my-40">
-        <h2 className="text-center text-4xl font-bold">FAQ</h2>
+      <section className="my-20">
+        <h2 className="text-center text-4xl font-bold">ears💭</h2>
         <Accordion>
-          <AccordionItem key={1} title="Why time machines?">
-            Because noboody else sells them!
+          <AccordionItem key={1} title="sea lion">
+            Have ears with external flaps
           </AccordionItem>
           <AccordionItem
             key={2}
-            title="How many time machines do we sell per year?"
-          >
-            According to our 2063 statistics, we sold roughly 4800 time
-            machines.
+            title="seal"          >
+            Have ear holes with no external flaps
           </AccordionItem>
         </Accordion>
-      </section>
+        <h2 className="text-center text-4xl font-bold">flippers💭</h2>
+        <Accordion>
+          <AccordionItem key={1} title="sea lion">
+            Long, hairless, leathery flippers
+          </AccordionItem>
+          <AccordionItem
+            key={2}
+            title="seal"          >
+            Short, hairy, webbed flippers
+          </AccordionItem>
+        </Accordion>
+        <h2 className="text-center text-4xl font-bold">motion💭</h2>
+        <Accordion>
+          <AccordionItem key={1} title="sea lion">
+          Can walk on land by rotating their hind flippers
+          </AccordionItem>
+          <AccordionItem
+            key={2}
+            title="seal"          >
+            Scoots forward on land on their bellies
+          </AccordionItem>
+        </Accordion>
+        <h2 className="text-center text-4xl font-bold">social💭</h2>
+        <Accordion>
+          <AccordionItem key={1} title="sea lion">
+            Very noisy, communicating with loud, dog-like barks; congregates in large noisy herds
+          </AccordionItem>
+          <AccordionItem
+            key={2}
+            title="seal"          >
+            Generally quiet, making soft grunts, growls, or hisses; more solitary
+          </AccordionItem>
+        </Accordion>
+      </section>      
     </div>
+    <div className="inline-block max-w-xl text-center justify-center">
+        <ConfettiButton/>
+        </div>
+    </section>
   );
 }

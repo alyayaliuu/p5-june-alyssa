@@ -1,29 +1,25 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Discount Time Machine Wholesale",
+  name: "sea elephant?",
   description:
-    "A great place to buy time machines at ridiculous prices! Obviously this is example text. Write a description of what your site is / what it does.",
+    "what are they?",
   navItems: [
     {
-      label: "Home",
+      label: "①",
       href: "/",
     },
     {
-      label: "Docs",
+      label: "🦭",
       href: "/docs",
     },
     {
-      label: "Pricing",
+      label: "💭",
       href: "/pricing",
     },
     {
-      label: "Blog",
+      label: "🌊",
       href: "/blog",
-    },
-    {
-      label: "About",
-      href: "/about",
     },
   ],
   navMenuItems: [
@@ -42,10 +38,6 @@ export const siteConfig = {
     {
       label: "Blog",
       href: "/blog",
-    },
-    {
-      label: "About",
-      href: "/about",
     },
   ],
   links: {

@@ -48,7 +48,7 @@ export default function RootLayout({
             </main>
             <footer className="w-full flex items-center justify-center py-3 bg-foreground">
               <div className="text-background">
-                this footer appears on every page!
+                20260612
               </div>
             </footer>
           </div>
